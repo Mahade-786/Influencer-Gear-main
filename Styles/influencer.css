@@ -6,7 +6,7 @@
 
 * {
     font-family: "Poppins", sans-serif;
-
+    flex-wrap: nowrap;
 }
 /* header styles */
 .header{
@@ -24,7 +24,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
+    
 }
 
 nav >ul{
@@ -147,19 +147,77 @@ nav li a{
     margin-top: -35px;
 }
 
+/* FLex-Container */
+
+.flex-container{
+    display: flex;
+    margin-top: 60px;
+
+}
+
+.container{
+    width: 50%;
+}
+
+.container img{
+    margin-top: 30px;
+    padding-left: 60px;
+}
+#con-width{
+    width: 40%;
+}
+
+/* Footer styles */
+
+.footer-size{
+    margin-top: 70px;
+    width: 1200px;
+    height: 250px;
+    background: rgba(1, 1, 23, 0.901);
+}
+.footer-center{
+    
+}
+.footer-h3{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.7rem;
+    padding-top: 40px;
+}
+.footer-h2{
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
 
 
-
-
-
-/* Media query */
+/* Small devices Media query */
 @media screen and (max-width: 576px) {
-    .section-title{
+    .section-title,
+    .main-title{
       padding: 60px;
     }
-    nav{
+    nav,
+    .flex-container{
         flex-direction: column;
         
+    }
+    .main-container{
+       grid-template-columns: 1fr;
+       padding-left: 50px;
+       
+    }
+    #btn{
+        padding: 0px 40px;
+    }
+    .box{
+        margin-top: 50px;
+    }
+    .see-more{
+        text-align: center;
+        padding-left: 70px;
     }
     .banner{
         flex-direction: column-reverse;
@@ -169,21 +227,48 @@ nav li a{
         margin-left: 7px;
     }
     .banner-title{
-        width: 400px;
+        width: 365px;
         top: 120px;
         text-align: center;
-        font-size: 2.6rem; 
+        font-size: 2.1rem; 
     } 
     .banner-p{
        width: 305px;
        padding-left: 47px;
     }
      .btn-primary{
-        margin-left: 120px;
+        margin-left: 100px;
      }  
      .sponsor-section{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-     }      
+     }
+     .footer-size{
+        padding-top: 20px;
+        width:380px;
+     }     
+     .container img{
+        width: 180%;
+        margin-top: 30px;
+        padding-left: 25px;
+    } 
+    #banner-img{
+        width: 390px;
+    }
+    .footer-h3, .footer-h2{
+        width: 70%;
+        text-align: center;
+        padding-left: 60px;
+        
+    }
+
 }
 
+/* Medium devices mediaquery */
+
+
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+    
+}
