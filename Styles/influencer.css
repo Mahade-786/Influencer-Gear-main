@@ -172,12 +172,9 @@ nav li a{
 
 .footer-size{
     margin-top: 70px;
-    width: 1200px;
+    width: 1300px;
     height: 250px;
     background: rgba(1, 1, 23, 0.901);
-}
-.footer-center{
-    
 }
 .footer-h3{
     text-align: center;
